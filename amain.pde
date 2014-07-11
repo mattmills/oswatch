@@ -16,7 +16,7 @@
 unsigned long epoch = 0;
 
 uint8_t offsetHours = 7;
-uint8_t offsetMinutes = 46;
+uint8_t offsetMinutes = 56;
 int sensorPin = 6;    // select the input pin for the buttons
 int sensorValue = 0;
 volatile int faceId = 2;

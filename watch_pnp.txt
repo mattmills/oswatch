@@ -1,0 +1,57 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=watch
+*Date=23:45:01
+*CreatedBy=Fritzing 0.8.7b.01.24.1bf5
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;usb-ab-micro-smd;5.30228;-2.95549;90;Bottom;U3
+2;;;6.50661;-20.6581;0;Bottom;Via4
+3;;;15.1829;-1.43623;0;Bottom;Pad3
+4;;;13.9117;-1.42665;0;Bottom;Pad2
+5;;;14.8275;-22.1889;0;Bottom;Via9
+6;;0402-cap;15.7812;-3.85815;-90;Top;C1
+7;;1210;9.65538;-11.6104;-90;Top;I1
+8;;;11.5312;-18.443;0;Bottom;Via6
+9;;sma-diode;9.71437;-7.13966;180;Top;D1
+10;;0402-cap;8.3614;-24.3493;180;Bottom;C3
+11;;so-24dw;8.6677;-8.0479;0;Bottom;U9
+12;;;4.44477;-9.59846;-90;Bottom;Pad8
+13;220;0402 [SMD];11.496;-27.1282;0;Bottom;R4
+14;220;0402 [SMD];11.3954;-15.699;-90;Bottom;R5
+15;;;6.54478;-22.13;0;Bottom;Via3
+16;47;0603 [SMD];8.59206;-1.40398;180;Top;R2
+17;;;12.6141;-1.41748;0;Bottom;Pad1
+18;;;12.6806;-15.0662;0;Bottom;Via11
+19;;;15.1333;-20.8248;0;Bottom;Via10
+20;;sot23-5;4.05517;-5.29;0;Top;U1
+21;;;8.54538;-22.1843;180;Top;RFduino1
+22;;1x10-2mm-smd;14.9038;-12.954;-90;Bottom;ZIF1
+23;;;9.4885;-19.5463;0;Bottom;Via5
+24;;;11.1802;-1.30239;0;Bottom;Via12
+25;;;15.472;-6.87403;-90;Bottom;Pad4
+26;;0402-cap;13.4983;-3.18505;90;Top;C2
+27;;sot23-3;14.3366;-7.28609;0;Top;Q1
+28;;;8.49044;-21.0228;0;Bottom;Via1
+29;;;15.4553;-4.30036;-90;Bottom;Pad5
+30;150mA;sot23-5;6.581;-12.1858;0;Top;U2
+31;;;15.4336;-5.55951;-90;Bottom;Pad6
+32;;;9.76714;-12.0256;-90;Bottom;Pad7
+33;;;12.6864;-19.6281;0;Bottom;Via7
+34;;;16.0858;-23.4471;0;Bottom;Via8
+35;220;0603 [SMD];5.01784;-8.4586;180;Top;R3
+36;;;2.98722;-22.2251;0;Bottom;Via2
+37;;led-0603;6.12015;-2.15347;0;Top;LED1
+38;10k;0603 [SMD];3.41454;-12.5154;-90;Top;R1
+39;3V;;12.5214;-11.7299;0;Bottom;VCC1
+40;;;12.5933;-16.7796;0;Bottom;Via13
+41;;so08;5.09175;-15.6928;180;Bottom;U6
+42;;lga14;11.5656;-23.683;-90;Bottom;U4
