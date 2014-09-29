@@ -1,57 +1,67 @@
 #include "Main.h"
+#include <Wire.h>
+#include "RTClib.h"
+
 #include <Adafruit_GFX.h>
 #include <Adafruit_SharpMem.h>
+#include <RFduinoBLE.h>
 
-#define SCK 2
+#define SCK 6
 #define MOSI 5
 #define SS 4
+
+RTC_DS1307 rtc;
 
 #define BLACK 0
 #define WHITE 1
 
-#define Y_OFFSET 28
-#define X_OFFSET 4
+#define Y_OFFSET 34
+#define X_OFFSET 5
 
-
-unsigned long epoch = 0;
-
-uint8_t offsetHours = 7;
-uint8_t offsetMinutes = 56;
-int sensorPin = 6;    // select the input pin for the buttons
-int sensorValue = 0;
-volatile int faceId = 2;
+uint8_t offsetSeconds;
 
 Adafruit_SharpMem display(SCK, MOSI, SS);
 
 void setup(){
-  Serial.begin(9600);
-  Serial.println("Hello!");
-
-  // start & clear the display
   display.begin();
   display.clearDisplay();
-  display.setTextSize(3);
+  display.setTextSize(4);
   display.setTextColor(BLACK);
-  pinMode(6, INPUT);
-  attachPinInterrupt(6, changeFace, HIGH);
+
+  Wire.beginOnPins(2,3);
+
+  if (! rtc.isrunning()) {
+    rtc.adjust(DateTime(__DATE__, __TIME__));
+  }
+
+  RFduinoBLE.txPowerLevel = -20;
+  RFduinoBLE.advertisementData = "r";
+  RFduinoBLE.begin();
 }
 
 void loop(){
-  noInterrupts ();
-    epoch = millis() / 1000 + offsetHours*3600 + offsetMinutes*60;
-    long face = faceId;  // get value set by ISR
-
-  if (face % 2 == 0){
-    displayDigital(epoch, display);
-  }else{
-    displayAnalog(epoch, display);
-  }
-  delay(100);
-  interrupts ();
+    DateTime now = rtc.now();
+    if (offsetSeconds < 1){
+      displayAnalog(now, display);
+    }else{
+      displayDigital(now.unixtime(), display);
+    }
+    RFduino_ULPDelay(200);
+    // delay(100);
 }
 
-int changeFace(uint32_t){
-  noInterrupts ();
-    faceId++;
-  interrupts ();
+void RFduinoBLE_onConnect(bool start)
+{
+  if (start)
+    display.setCursor(0,0);
+}
+
+void RFduinoBLE_onReceive(char *data, int len) {
+  if (len >= 3){
+    uint8_t hours = data[0];
+    uint8_t minutes = data[1];
+    uint8_t seconds = data[2];
+
+    offsetSeconds = seconds;
+  }
 }
