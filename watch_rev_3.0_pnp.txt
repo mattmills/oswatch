@@ -1,0 +1,70 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=watch_rev_3.0
+*Date=00:47:01
+*CreatedBy=Fritzing 0.9.0b.06.11.da4e
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;28.8417;-17.395;0;Bottom;Copper Fill6
+2;;0402-cap;15.1434;-11.4245;0;Top;C6
+3;;;25.822;-10.1941;0;Bottom;Via22
+4;;;13.6525;-1.012;0;Bottom;Copper Fill3
+5;100k;0603 [SMD];3.52711;-6.87855;180;Top;R3
+6;;;28.6413;-0.904606;0;Bottom;Via29
+7;;;8.33086;-6.68219;0;Bottom;Via14
+8;;;20.199;-21.59;0;Bottom;Via19
+9;;1x10-2mm-smd;6.19251;-16.0391;90;Top;ZIF2
+10;;1210;10.6427;-9.93817;0;Top;I1
+11;;;18.2262;-25.4548;0;Bottom;Via1
+12;;;1.9558;-25.9675;0;Bottom;Copper Fill10
+13;;;25.4847;-7.40817;0;Bottom;Via23
+14;10k;0603 [SMD];3.54218;-5.05926;180;Top;R1
+15;;sot23-5;7.7714;-4.61827;0;Top;U1
+16;;;31.4706;-2.0915;0;Bottom;Copper Fill5
+17;;sot23-3;11.379;-6.30932;0;Top;Q1
+18;;;22.5765;-15.3225;0;Bottom;Via21
+19;;QFN-24;22.6547;-4.53897;0;Top;U11
+20;;;29.7731;-12.1898;0;Bottom;Via25
+21;;0402-cap;15.1505;-13.0755;0;Top;C5
+22;;;16.4932;-9.91857;0;Bottom;Via16
+23;;;23.3761;-24.2098;180;Top;RFduino1
+24;;;30.1759;-0.886586;0;Bottom;Via30
+25;;;2.5273;-26.539;0;Bottom;Copper Fill9
+26;;;31.1421;-2.00451;0;Bottom;Via27
+27;;;29.4132;-17.9411;0;Bottom;Copper Fill8
+28;;;3.0734;-25.9675;0;Bottom;Copper Fill11
+29;;sma-diode;4.33215;-9.37185;0;Top;D1
+30;;so08;29.1997;-11.6438;180;Top;U6
+31;;0603-cap;17.4284;-6.94141;90;Top;C4
+32;220;0402 [SMD];20.4675;-11.2924;180;Top;R5
+33;;;23.4231;-8.53035;0;Bottom;Via24
+34;;0402-cap;17.806;-1.01848;180;Top;C8
+35;;0402-cap;12.7984;-3.85691;0;Top;C2
+36;;led-0603;4.79486;-1.5724;90;Top;LED1
+37;3V;;12.4159;-1.73702;90;Bottom;VCC1
+38;;;26.6123;-8.91606;0;Bottom;Via26
+39;220;0402 [SMD];20.4468;-13.4641;180;Top;R4
+40;;usb-ab-micro-smd;5.33719;-28.968;90;Top;U3
+41;150mA;sot23-5;14.8958;-8.43505;0;Top;U10
+42;;;20.447;-15.1852;0;Bottom;Copper Fill2
+43;;;27.1272;-9.0003;0;Bottom;Copper Fill12
+44;;;16.7219;-13.0834;0;Bottom;Via15
+45;;;2.57384;-25.9166;0;Bottom;Via13
+46;;;28.9393;-17.8882;0;Bottom;Via20
+47;;0402-cap;22.3641;-0.843788;0;Top;C7
+48;;;27.2766;-0.875136;0;Bottom;Via28
+49;;;31.0769;-2.536;0;Bottom;Copper Fill4
+50;;;7.84513;-26.6241;0;Bottom;Via10
+51;;;15.9766;-16.0234;0;Bottom;Copper Fill1
+52;47;0603 [SMD];3.58175;-3.1669;180;Top;R2
+53;;;28.2956;-17.9411;0;Bottom;Copper Fill7
+54;;0402-cap;17.716;-3.57773;180;Top;C3
+55;;so-24dw;29.33;-4.43533;0;Top;U9
